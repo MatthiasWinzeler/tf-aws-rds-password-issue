@@ -9,7 +9,7 @@ resource "random_password" "db" {
 
 resource "aws_db_instance" "postgres" {
   engine                 = "postgres"
-  engine_version         = "13.6"
+  engine_version         = "13.7"
   instance_class         = "db.t4g.micro"
   db_name                = "rdsissue"
   username               = "rdsissueadmin"
